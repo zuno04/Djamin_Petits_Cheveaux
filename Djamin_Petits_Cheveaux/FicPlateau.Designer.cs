@@ -93,12 +93,6 @@ namespace Djamin_Petits_Cheveaux
             this.bApropos = new System.Windows.Forms.Button();
             this.SFD = new System.Windows.Forms.SaveFileDialog();
             this.OFD = new System.Windows.Forms.OpenFileDialog();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbServeur = new System.Windows.Forms.TextBox();
-            this.bConnecter = new System.Windows.Forms.Button();
-            this.bEcouter = new System.Windows.Forms.Button();
-            this.bDeconnecter = new System.Windows.Forms.Button();
-            this.lbEchange = new System.Windows.Forms.ListBox();
             this.pFinal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pDice)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -137,7 +131,7 @@ namespace Djamin_Petits_Cheveaux
             this.pFinal.Controls.Add(this.buttonReda0);
             this.pFinal.Controls.Add(this.pDice);
             this.pFinal.Location = new System.Drawing.Point(423, 391);
-            this.pFinal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pFinal.Margin = new System.Windows.Forms.Padding(4);
             this.pFinal.Name = "pFinal";
             this.pFinal.Size = new System.Drawing.Size(147, 135);
             this.pFinal.TabIndex = 3;
@@ -146,7 +140,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.buttonReda3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonReda3.Location = new System.Drawing.Point(4, 36);
-            this.buttonReda3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReda3.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReda3.Name = "buttonReda3";
             this.buttonReda3.Size = new System.Drawing.Size(24, 62);
             this.buttonReda3.TabIndex = 30;
@@ -159,7 +153,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.buttonReda2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonReda2.Location = new System.Drawing.Point(41, 108);
-            this.buttonReda2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReda2.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReda2.Name = "buttonReda2";
             this.buttonReda2.Size = new System.Drawing.Size(67, 23);
             this.buttonReda2.TabIndex = 29;
@@ -172,7 +166,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.buttonReda1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonReda1.Location = new System.Drawing.Point(119, 36);
-            this.buttonReda1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReda1.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReda1.Name = "buttonReda1";
             this.buttonReda1.Size = new System.Drawing.Size(24, 62);
             this.buttonReda1.TabIndex = 28;
@@ -185,7 +179,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.buttonReda0.BackColor = System.Drawing.Color.WhiteSmoke;
             this.buttonReda0.Location = new System.Drawing.Point(41, 4);
-            this.buttonReda0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonReda0.Margin = new System.Windows.Forms.Padding(4);
             this.buttonReda0.Name = "buttonReda0";
             this.buttonReda0.Size = new System.Drawing.Size(67, 23);
             this.buttonReda0.TabIndex = 27;
@@ -201,7 +195,7 @@ namespace Djamin_Petits_Cheveaux
             this.pDice.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pDice.Image = global::Djamin_Petits_Cheveaux.Properties.Resources.dice0;
             this.pDice.Location = new System.Drawing.Point(35, 31);
-            this.pDice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pDice.Margin = new System.Windows.Forms.Padding(4);
             this.pDice.Name = "pDice";
             this.pDice.Size = new System.Drawing.Size(79, 73);
             this.pDice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -214,7 +208,7 @@ namespace Djamin_Petits_Cheveaux
             this.pictureBox20.BackgroundImage = global::Djamin_Petits_Cheveaux.Properties.Resources.down1;
             this.pictureBox20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox20.Location = new System.Drawing.Point(464, 79);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(67, 41);
             this.pictureBox20.TabIndex = 23;
@@ -225,7 +219,7 @@ namespace Djamin_Petits_Cheveaux
             this.pictureBox19.BackgroundImage = global::Djamin_Petits_Cheveaux.Properties.Resources.right1;
             this.pictureBox19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox19.Location = new System.Drawing.Point(84, 428);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(44, 62);
             this.pictureBox19.TabIndex = 22;
@@ -236,7 +230,7 @@ namespace Djamin_Petits_Cheveaux
             this.pictureBox18.BackgroundImage = global::Djamin_Petits_Cheveaux.Properties.Resources.left1;
             this.pictureBox18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox18.Location = new System.Drawing.Point(864, 428);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(44, 62);
             this.pictureBox18.TabIndex = 21;
@@ -247,7 +241,7 @@ namespace Djamin_Petits_Cheveaux
             this.pictureBox17.BackgroundImage = global::Djamin_Petits_Cheveaux.Properties.Resources.up1;
             this.pictureBox17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox17.Location = new System.Drawing.Point(464, 799);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(67, 41);
             this.pictureBox17.TabIndex = 20;
@@ -258,7 +252,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbB1.BackColor = System.Drawing.Color.Blue;
             this.pbB1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbB1.Location = new System.Drawing.Point(464, 736);
-            this.pbB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbB1.Margin = new System.Windows.Forms.Padding(4);
             this.pbB1.Name = "pbB1";
             this.pbB1.Size = new System.Drawing.Size(65, 61);
             this.pbB1.TabIndex = 19;
@@ -269,7 +263,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbB2.BackColor = System.Drawing.Color.Blue;
             this.pbB2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbB2.Location = new System.Drawing.Point(464, 667);
-            this.pbB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbB2.Margin = new System.Windows.Forms.Padding(4);
             this.pbB2.Name = "pbB2";
             this.pbB2.Size = new System.Drawing.Size(65, 61);
             this.pbB2.TabIndex = 18;
@@ -280,7 +274,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbB3.BackColor = System.Drawing.Color.Blue;
             this.pbB3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbB3.Location = new System.Drawing.Point(464, 598);
-            this.pbB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbB3.Margin = new System.Windows.Forms.Padding(4);
             this.pbB3.Name = "pbB3";
             this.pbB3.Size = new System.Drawing.Size(65, 61);
             this.pbB3.TabIndex = 17;
@@ -291,7 +285,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbB4.BackColor = System.Drawing.Color.Blue;
             this.pbB4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbB4.Location = new System.Drawing.Point(464, 529);
-            this.pbB4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbB4.Margin = new System.Windows.Forms.Padding(4);
             this.pbB4.Name = "pbB4";
             this.pbB4.Size = new System.Drawing.Size(65, 61);
             this.pbB4.TabIndex = 16;
@@ -302,7 +296,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbV1.BackColor = System.Drawing.Color.Green;
             this.pbV1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbV1.Location = new System.Drawing.Point(129, 428);
-            this.pbV1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbV1.Margin = new System.Windows.Forms.Padding(4);
             this.pbV1.Name = "pbV1";
             this.pbV1.Size = new System.Drawing.Size(65, 61);
             this.pbV1.TabIndex = 15;
@@ -313,7 +307,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbV2.BackColor = System.Drawing.Color.Green;
             this.pbV2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbV2.Location = new System.Drawing.Point(204, 428);
-            this.pbV2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbV2.Margin = new System.Windows.Forms.Padding(4);
             this.pbV2.Name = "pbV2";
             this.pbV2.Size = new System.Drawing.Size(65, 61);
             this.pbV2.TabIndex = 14;
@@ -324,7 +318,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbV3.BackColor = System.Drawing.Color.Green;
             this.pbV3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbV3.Location = new System.Drawing.Point(279, 428);
-            this.pbV3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbV3.Margin = new System.Windows.Forms.Padding(4);
             this.pbV3.Name = "pbV3";
             this.pbV3.Size = new System.Drawing.Size(65, 61);
             this.pbV3.TabIndex = 13;
@@ -335,7 +329,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbV4.BackColor = System.Drawing.Color.Green;
             this.pbV4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbV4.Location = new System.Drawing.Point(353, 428);
-            this.pbV4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbV4.Margin = new System.Windows.Forms.Padding(4);
             this.pbV4.Name = "pbV4";
             this.pbV4.Size = new System.Drawing.Size(65, 61);
             this.pbV4.TabIndex = 12;
@@ -346,7 +340,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbJ1.BackColor = System.Drawing.Color.Yellow;
             this.pbJ1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbJ1.Location = new System.Drawing.Point(795, 428);
-            this.pbJ1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbJ1.Margin = new System.Windows.Forms.Padding(4);
             this.pbJ1.Name = "pbJ1";
             this.pbJ1.Size = new System.Drawing.Size(65, 61);
             this.pbJ1.TabIndex = 11;
@@ -357,7 +351,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbJ2.BackColor = System.Drawing.Color.Yellow;
             this.pbJ2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbJ2.Location = new System.Drawing.Point(720, 428);
-            this.pbJ2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbJ2.Margin = new System.Windows.Forms.Padding(4);
             this.pbJ2.Name = "pbJ2";
             this.pbJ2.Size = new System.Drawing.Size(65, 61);
             this.pbJ2.TabIndex = 10;
@@ -368,7 +362,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbJ3.BackColor = System.Drawing.Color.Yellow;
             this.pbJ3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbJ3.Location = new System.Drawing.Point(645, 428);
-            this.pbJ3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbJ3.Margin = new System.Windows.Forms.Padding(4);
             this.pbJ3.Name = "pbJ3";
             this.pbJ3.Size = new System.Drawing.Size(65, 61);
             this.pbJ3.TabIndex = 9;
@@ -379,7 +373,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbJ4.BackColor = System.Drawing.Color.Yellow;
             this.pbJ4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbJ4.Location = new System.Drawing.Point(571, 428);
-            this.pbJ4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbJ4.Margin = new System.Windows.Forms.Padding(4);
             this.pbJ4.Name = "pbJ4";
             this.pbJ4.Size = new System.Drawing.Size(65, 61);
             this.pbJ4.TabIndex = 8;
@@ -390,7 +384,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbR1.BackColor = System.Drawing.Color.Red;
             this.pbR1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbR1.Location = new System.Drawing.Point(464, 121);
-            this.pbR1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbR1.Margin = new System.Windows.Forms.Padding(4);
             this.pbR1.Name = "pbR1";
             this.pbR1.Size = new System.Drawing.Size(65, 61);
             this.pbR1.TabIndex = 7;
@@ -401,7 +395,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbR2.BackColor = System.Drawing.Color.Red;
             this.pbR2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbR2.Location = new System.Drawing.Point(464, 190);
-            this.pbR2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbR2.Margin = new System.Windows.Forms.Padding(4);
             this.pbR2.Name = "pbR2";
             this.pbR2.Size = new System.Drawing.Size(65, 61);
             this.pbR2.TabIndex = 6;
@@ -412,7 +406,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbR3.BackColor = System.Drawing.Color.Red;
             this.pbR3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbR3.Location = new System.Drawing.Point(464, 258);
-            this.pbR3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbR3.Margin = new System.Windows.Forms.Padding(4);
             this.pbR3.Name = "pbR3";
             this.pbR3.Size = new System.Drawing.Size(65, 61);
             this.pbR3.TabIndex = 5;
@@ -423,7 +417,7 @@ namespace Djamin_Petits_Cheveaux
             this.pbR4.BackColor = System.Drawing.Color.Red;
             this.pbR4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pbR4.Location = new System.Drawing.Point(464, 327);
-            this.pbR4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbR4.Margin = new System.Windows.Forms.Padding(4);
             this.pbR4.Name = "pbR4";
             this.pbR4.Size = new System.Drawing.Size(65, 61);
             this.pbR4.TabIndex = 4;
@@ -441,7 +435,7 @@ namespace Djamin_Petits_Cheveaux
             this.panel1.Controls.Add(this.bJ1);
             this.panel1.Controls.Add(this.bJ3);
             this.panel1.Location = new System.Drawing.Point(615, 567);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(364, 336);
             this.panel1.TabIndex = 2;
@@ -464,7 +458,7 @@ namespace Djamin_Petits_Cheveaux
             this.bJ2.Enabled = false;
             this.bJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bJ2.Location = new System.Drawing.Point(36, 240);
-            this.bJ2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bJ2.Margin = new System.Windows.Forms.Padding(4);
             this.bJ2.Name = "bJ2";
             this.bJ2.Size = new System.Drawing.Size(67, 62);
             this.bJ2.TabIndex = 6;
@@ -491,7 +485,7 @@ namespace Djamin_Petits_Cheveaux
             this.bJ0.Enabled = false;
             this.bJ0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bJ0.Location = new System.Drawing.Point(36, 37);
-            this.bJ0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bJ0.Margin = new System.Windows.Forms.Padding(4);
             this.bJ0.Name = "bJ0";
             this.bJ0.Size = new System.Drawing.Size(67, 62);
             this.bJ0.TabIndex = 4;
@@ -506,7 +500,7 @@ namespace Djamin_Petits_Cheveaux
             this.bJ1.Enabled = false;
             this.bJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bJ1.Location = new System.Drawing.Point(260, 37);
-            this.bJ1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bJ1.Margin = new System.Windows.Forms.Padding(4);
             this.bJ1.Name = "bJ1";
             this.bJ1.Size = new System.Drawing.Size(67, 62);
             this.bJ1.TabIndex = 5;
@@ -521,7 +515,7 @@ namespace Djamin_Petits_Cheveaux
             this.bJ3.Enabled = false;
             this.bJ3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bJ3.Location = new System.Drawing.Point(260, 240);
-            this.bJ3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bJ3.Margin = new System.Windows.Forms.Padding(4);
             this.bJ3.Name = "bJ3";
             this.bJ3.Size = new System.Drawing.Size(67, 62);
             this.bJ3.TabIndex = 7;
@@ -541,7 +535,7 @@ namespace Djamin_Petits_Cheveaux
             this.panel2.Controls.Add(this.bB1);
             this.panel2.Controls.Add(this.bB3);
             this.panel2.Location = new System.Drawing.Point(17, 566);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(364, 336);
             this.panel2.TabIndex = 3;
@@ -564,7 +558,7 @@ namespace Djamin_Petits_Cheveaux
             this.bB2.Enabled = false;
             this.bB2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bB2.Location = new System.Drawing.Point(36, 240);
-            this.bB2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bB2.Margin = new System.Windows.Forms.Padding(4);
             this.bB2.Name = "bB2";
             this.bB2.Size = new System.Drawing.Size(67, 62);
             this.bB2.TabIndex = 6;
@@ -591,7 +585,7 @@ namespace Djamin_Petits_Cheveaux
             this.bB0.Enabled = false;
             this.bB0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bB0.Location = new System.Drawing.Point(36, 37);
-            this.bB0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bB0.Margin = new System.Windows.Forms.Padding(4);
             this.bB0.Name = "bB0";
             this.bB0.Size = new System.Drawing.Size(67, 62);
             this.bB0.TabIndex = 4;
@@ -606,7 +600,7 @@ namespace Djamin_Petits_Cheveaux
             this.bB1.Enabled = false;
             this.bB1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bB1.Location = new System.Drawing.Point(260, 37);
-            this.bB1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bB1.Margin = new System.Windows.Forms.Padding(4);
             this.bB1.Name = "bB1";
             this.bB1.Size = new System.Drawing.Size(67, 62);
             this.bB1.TabIndex = 5;
@@ -621,7 +615,7 @@ namespace Djamin_Petits_Cheveaux
             this.bB3.Enabled = false;
             this.bB3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bB3.Location = new System.Drawing.Point(260, 240);
-            this.bB3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bB3.Margin = new System.Windows.Forms.Padding(4);
             this.bB3.Name = "bB3";
             this.bB3.Size = new System.Drawing.Size(67, 62);
             this.bB3.TabIndex = 7;
@@ -641,7 +635,7 @@ namespace Djamin_Petits_Cheveaux
             this.panel3.Controls.Add(this.bV0);
             this.panel3.Controls.Add(this.lVert);
             this.panel3.Location = new System.Drawing.Point(17, 15);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(364, 336);
             this.panel3.TabIndex = 1;
@@ -664,7 +658,7 @@ namespace Djamin_Petits_Cheveaux
             this.bV2.Enabled = false;
             this.bV2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bV2.Location = new System.Drawing.Point(36, 240);
-            this.bV2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bV2.Margin = new System.Windows.Forms.Padding(4);
             this.bV2.Name = "bV2";
             this.bV2.Size = new System.Drawing.Size(67, 62);
             this.bV2.TabIndex = 10;
@@ -679,7 +673,7 @@ namespace Djamin_Petits_Cheveaux
             this.bV1.Enabled = false;
             this.bV1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bV1.Location = new System.Drawing.Point(260, 37);
-            this.bV1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bV1.Margin = new System.Windows.Forms.Padding(4);
             this.bV1.Name = "bV1";
             this.bV1.Size = new System.Drawing.Size(67, 62);
             this.bV1.TabIndex = 9;
@@ -694,7 +688,7 @@ namespace Djamin_Petits_Cheveaux
             this.bV3.Enabled = false;
             this.bV3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bV3.Location = new System.Drawing.Point(260, 240);
-            this.bV3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bV3.Margin = new System.Windows.Forms.Padding(4);
             this.bV3.Name = "bV3";
             this.bV3.Size = new System.Drawing.Size(67, 62);
             this.bV3.TabIndex = 11;
@@ -709,7 +703,7 @@ namespace Djamin_Petits_Cheveaux
             this.bV0.Enabled = false;
             this.bV0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bV0.Location = new System.Drawing.Point(36, 37);
-            this.bV0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bV0.Margin = new System.Windows.Forms.Padding(4);
             this.bV0.Name = "bV0";
             this.bV0.Size = new System.Drawing.Size(67, 62);
             this.bV0.TabIndex = 8;
@@ -741,7 +735,7 @@ namespace Djamin_Petits_Cheveaux
             this.panel0.Controls.Add(this.bR3);
             this.panel0.Controls.Add(this.bR0);
             this.panel0.Location = new System.Drawing.Point(615, 16);
-            this.panel0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel0.Margin = new System.Windows.Forms.Padding(4);
             this.panel0.Name = "panel0";
             this.panel0.Size = new System.Drawing.Size(364, 336);
             this.panel0.TabIndex = 0;
@@ -763,7 +757,7 @@ namespace Djamin_Petits_Cheveaux
             this.bR2.Enabled = false;
             this.bR2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bR2.Location = new System.Drawing.Point(40, 240);
-            this.bR2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bR2.Margin = new System.Windows.Forms.Padding(4);
             this.bR2.Name = "bR2";
             this.bR2.Size = new System.Drawing.Size(67, 62);
             this.bR2.TabIndex = 2;
@@ -778,7 +772,7 @@ namespace Djamin_Petits_Cheveaux
             this.bR1.Enabled = false;
             this.bR1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bR1.Location = new System.Drawing.Point(260, 37);
-            this.bR1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bR1.Margin = new System.Windows.Forms.Padding(4);
             this.bR1.Name = "bR1";
             this.bR1.Size = new System.Drawing.Size(67, 62);
             this.bR1.TabIndex = 1;
@@ -805,7 +799,7 @@ namespace Djamin_Petits_Cheveaux
             this.bR3.Enabled = false;
             this.bR3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bR3.Location = new System.Drawing.Point(264, 240);
-            this.bR3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bR3.Margin = new System.Windows.Forms.Padding(4);
             this.bR3.Name = "bR3";
             this.bR3.Size = new System.Drawing.Size(67, 62);
             this.bR3.TabIndex = 3;
@@ -820,7 +814,7 @@ namespace Djamin_Petits_Cheveaux
             this.bR0.Enabled = false;
             this.bR0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bR0.Location = new System.Drawing.Point(36, 37);
-            this.bR0.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bR0.Margin = new System.Windows.Forms.Padding(4);
             this.bR0.Name = "bR0";
             this.bR0.Size = new System.Drawing.Size(67, 62);
             this.bR0.TabIndex = 0;
@@ -835,19 +829,13 @@ namespace Djamin_Petits_Cheveaux
             // pan1
             // 
             this.pan1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pan1.Controls.Add(this.lbEchange);
-            this.pan1.Controls.Add(this.bDeconnecter);
-            this.pan1.Controls.Add(this.bEcouter);
-            this.pan1.Controls.Add(this.bConnecter);
-            this.pan1.Controls.Add(this.tbServeur);
-            this.pan1.Controls.Add(this.label1);
             this.pan1.Controls.Add(this.bQuitter);
             this.pan1.Controls.Add(this.bSave);
             this.pan1.Controls.Add(this.bOuvrir);
             this.pan1.Controls.Add(this.bApropos);
             this.pan1.Dock = System.Windows.Forms.DockStyle.Right;
             this.pan1.Location = new System.Drawing.Point(995, 0);
-            this.pan1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan1.Margin = new System.Windows.Forms.Padding(4);
             this.pan1.Name = "pan1";
             this.pan1.Size = new System.Drawing.Size(236, 919);
             this.pan1.TabIndex = 24;
@@ -856,7 +844,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.bQuitter.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bQuitter.Location = new System.Drawing.Point(15, 249);
-            this.bQuitter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bQuitter.Margin = new System.Windows.Forms.Padding(4);
             this.bQuitter.Name = "bQuitter";
             this.bQuitter.Size = new System.Drawing.Size(203, 43);
             this.bQuitter.TabIndex = 3;
@@ -868,7 +856,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.bSave.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bSave.Location = new System.Drawing.Point(15, 166);
-            this.bSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSave.Margin = new System.Windows.Forms.Padding(4);
             this.bSave.Name = "bSave";
             this.bSave.Size = new System.Drawing.Size(203, 43);
             this.bSave.TabIndex = 2;
@@ -880,7 +868,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.bOuvrir.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bOuvrir.Location = new System.Drawing.Point(15, 87);
-            this.bOuvrir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bOuvrir.Margin = new System.Windows.Forms.Padding(4);
             this.bOuvrir.Name = "bOuvrir";
             this.bOuvrir.Size = new System.Drawing.Size(203, 43);
             this.bOuvrir.TabIndex = 1;
@@ -892,7 +880,7 @@ namespace Djamin_Petits_Cheveaux
             // 
             this.bApropos.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bApropos.Location = new System.Drawing.Point(15, 12);
-            this.bApropos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bApropos.Margin = new System.Windows.Forms.Padding(4);
             this.bApropos.Name = "bApropos";
             this.bApropos.Size = new System.Drawing.Size(203, 43);
             this.bApropos.TabIndex = 0;
@@ -903,70 +891,6 @@ namespace Djamin_Petits_Cheveaux
             // OFD
             // 
             this.OFD.FileName = "openFileDialog1";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 310);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Adresse IP";
-            // 
-            // tbServeur
-            // 
-            this.tbServeur.Location = new System.Drawing.Point(18, 329);
-            this.tbServeur.Multiline = true;
-            this.tbServeur.Name = "tbServeur";
-            this.tbServeur.Size = new System.Drawing.Size(200, 37);
-            this.tbServeur.TabIndex = 5;
-            this.tbServeur.Text = "Zuno11";
-            // 
-            // bConnecter
-            // 
-            this.bConnecter.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bConnecter.Location = new System.Drawing.Point(18, 373);
-            this.bConnecter.Margin = new System.Windows.Forms.Padding(4);
-            this.bConnecter.Name = "bConnecter";
-            this.bConnecter.Size = new System.Drawing.Size(203, 43);
-            this.bConnecter.TabIndex = 6;
-            this.bConnecter.Text = "Connecter";
-            this.bConnecter.UseVisualStyleBackColor = true;
-            this.bConnecter.Click += new System.EventHandler(this.bConnecter_Click);
-            // 
-            // bEcouter
-            // 
-            this.bEcouter.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bEcouter.Location = new System.Drawing.Point(18, 420);
-            this.bEcouter.Margin = new System.Windows.Forms.Padding(4);
-            this.bEcouter.Name = "bEcouter";
-            this.bEcouter.Size = new System.Drawing.Size(203, 43);
-            this.bEcouter.TabIndex = 7;
-            this.bEcouter.Text = "Ecouter";
-            this.bEcouter.UseVisualStyleBackColor = true;
-            this.bEcouter.Click += new System.EventHandler(this.bEcouter_Click);
-            // 
-            // bDeconnecter
-            // 
-            this.bDeconnecter.Enabled = false;
-            this.bDeconnecter.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bDeconnecter.Location = new System.Drawing.Point(18, 471);
-            this.bDeconnecter.Margin = new System.Windows.Forms.Padding(4);
-            this.bDeconnecter.Name = "bDeconnecter";
-            this.bDeconnecter.Size = new System.Drawing.Size(203, 43);
-            this.bDeconnecter.TabIndex = 8;
-            this.bDeconnecter.Text = "Deconnecter";
-            this.bDeconnecter.UseVisualStyleBackColor = true;
-            this.bDeconnecter.Click += new System.EventHandler(this.bDeconnecter_Click);
-            // 
-            // lbEchange
-            // 
-            this.lbEchange.FormattingEnabled = true;
-            this.lbEchange.ItemHeight = 16;
-            this.lbEchange.Location = new System.Drawing.Point(18, 536);
-            this.lbEchange.Name = "lbEchange";
-            this.lbEchange.Size = new System.Drawing.Size(200, 84);
-            this.lbEchange.TabIndex = 9;
             // 
             // EcranPlateau
             // 
@@ -1002,7 +926,7 @@ namespace Djamin_Petits_Cheveaux
             this.Controls.Add(this.panel0);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "EcranPlateau";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1036,7 +960,6 @@ namespace Djamin_Petits_Cheveaux
             this.panel3.ResumeLayout(false);
             this.panel0.ResumeLayout(false);
             this.pan1.ResumeLayout(false);
-            this.pan1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1106,11 +1029,5 @@ namespace Djamin_Petits_Cheveaux
         private System.Windows.Forms.SaveFileDialog SFD;
         private System.Windows.Forms.OpenFileDialog OFD;
         private System.Windows.Forms.Button bQuitter;
-        private System.Windows.Forms.Button bDeconnecter;
-        private System.Windows.Forms.Button bEcouter;
-        private System.Windows.Forms.Button bConnecter;
-        private System.Windows.Forms.TextBox tbServeur;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lbEchange;
     }
 }

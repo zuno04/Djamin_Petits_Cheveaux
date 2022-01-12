@@ -53,6 +53,18 @@
     <Compile Include="FicApropos.Designer.cs">
       <DependentUpon>FicApropos.cs</DependentUpon>
     </Compile>
+    <Compile Include="FicChoixJeux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicChoixJeux.Designer.cs">
+      <DependentUpon>FicChoixJeux.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FicEnLigne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FicEnLigne.Designer.cs">
+      <DependentUpon>FicEnLigne.cs</DependentUpon>
+    </Compile>
     <Compile Include="FicPlateau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +82,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FicApropos.resx">
       <DependentUpon>FicApropos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicChoixJeux.resx">
+      <DependentUpon>FicChoixJeux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FicEnLigne.resx">
+      <DependentUpon>FicEnLigne.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FicPlateau.resx">
       <DependentUpon>FicPlateau.cs</DependentUpon>

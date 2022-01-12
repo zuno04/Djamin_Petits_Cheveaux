@@ -16,7 +16,8 @@ namespace Djamin_Petits_Cheveaux
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EcranChoixJoeur());
+            //Application.Run(new EcranChoixJoeur());
+            Application.Run(new FicChoixJeux());
         }
     }
 }
