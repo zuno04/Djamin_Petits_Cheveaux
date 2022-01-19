@@ -45,15 +45,29 @@ namespace Djamin_Petits_Cheveaux
         }
         private void InsererIterm(object oTexte)
         {
+            String message = (string)oTexte;
+
             if (lbEchange.InvokeRequired)
             {
                 RenvoiVersInserer f = new RenvoiVersInserer(InsererIterm);
                 Invoke(f, new object[] { (string)oTexte });
                 Console.WriteLine("Cli - Zuno required!");
+
+                if(message.Contains("Jeu lancé")) {
+                    //MessageBox.Show("Let's PLAY !!!!");
+
+                    EcranPlateau plateau = new EcranPlateau();
+                    nbJoueur = 1;
+                    this.Hide();
+                    plateau.Show();
+                }
             }
             else
             {
-                lbEchange.Items.Insert(0, (string)oTexte);
+               
+
+                lbEchange.Items.Insert(0, message);
+                                
                 Console.WriteLine("Cli - NOT SORRY !!!");
             }
         }
@@ -122,15 +136,8 @@ namespace Djamin_Petits_Cheveaux
                     sClient.Send(Encoding.Unicode.GetBytes("Connexion effectuée par " +
                         ((IPEndPoint)sClient.RemoteEndPoint).Address.ToString()));
 
-                    //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
-                    //bBuffer = new Byte[1024];
-
-                    Console.WriteLine("Serv - Bye BUFFER");
-
                     sClient.Send(Encoding.Unicode.GetBytes("Bienvenue client !"));
-                    //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
-                    //bBuffer = new Byte[1024];
-
+                    
 
                     InintialiserReception(sClient);
                 }
@@ -213,9 +220,6 @@ namespace Djamin_Petits_Cheveaux
         private void bDemarrer_Click(object sender, EventArgs e)
         {
             sClient.Send(Encoding.Unicode.GetBytes("Jeu lancé"));
-
-            //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
-            //bBuffer = new Byte[1024];
 
             Console.WriteLine("Serv - Jeu lancé");
 
