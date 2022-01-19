@@ -28,15 +28,34 @@ namespace Djamin_Petits_Cheveaux
             Thread ThreadInsererIterm = new Thread(new ParameterizedThreadStart(InsererIterm));
             ThreadInsererIterm.Start(sTexte);
         }
+
+        private bool SocketConnected(Socket s)
+        {
+            if (s != null)
+            {
+                bool part1 = s.Poll(1000, SelectMode.SelectRead);
+                bool part2 = (s.Available == 0);
+                if (part1 & part2)
+                {//connection is closed
+                    return false;
+                }
+                return true;
+            }
+            return false;
+        }
         private void InsererIterm(object oTexte)
         {
             if (lbEchange.InvokeRequired)
             {
                 RenvoiVersInserer f = new RenvoiVersInserer(InsererIterm);
                 Invoke(f, new object[] { (string)oTexte });
+                Console.WriteLine("Cli - Zuno required!");
             }
             else
+            {
                 lbEchange.Items.Insert(0, (string)oTexte);
+                Console.WriteLine("Cli - NOT SORRY !!!");
+            }
         }
         public FicEnLigne()
         {
@@ -82,29 +101,60 @@ namespace Djamin_Petits_Cheveaux
             sServeur.Bind(new IPEndPoint(ipServeur, 8001));
             sServeur.Listen(1);
             sServeur.BeginAccept(new AsyncCallback(SurDemandeConnexion), sServeur);
+            Console.WriteLine("Serv - BUTTON");
             bDemarrer.Visible = true;
+            bDemarrer.Enabled = true;
         }
 
         private void SurDemandeConnexion(IAsyncResult iAR)
         {
             if (sServeur != null)
             {
-                Socket sTmp = (Socket)iAR.AsyncState;
-                sClient = sTmp.EndAccept(iAR);
-                sClient.Send(Encoding.Unicode.GetBytes("Connexion effectuée par " +
-                    ((IPEndPoint)sClient.RemoteEndPoint).Address.ToString()));
-                MessageBox.Show("sdedddddddd");
                 
+                Socket sTmp = (Socket)iAR.AsyncState;
 
-                InintialiserReception(sClient);
+
+                if(SocketConnected(sTmp))
+                {
+                    sClient = sTmp.EndAccept(iAR);
+
+                    Console.WriteLine("Serv - WHO CONNECTS ?");
+                    sClient.Send(Encoding.Unicode.GetBytes("Connexion effectuée par " +
+                        ((IPEndPoint)sClient.RemoteEndPoint).Address.ToString()));
+
+                    //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
+                    //bBuffer = new Byte[1024];
+
+                    Console.WriteLine("Serv - Bye BUFFER");
+
+                    sClient.Send(Encoding.Unicode.GetBytes("Bienvenue client !"));
+                    //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
+                    //bBuffer = new Byte[1024];
+
+
+                    InintialiserReception(sClient);
+                }
+
             }
+            else Console.WriteLine("Serv - NULL SERVER");
         }
 
         private void InintialiserReception(Socket soc)
         {
             soc.BeginReceive(bBuffer, 0, bBuffer.Length, SocketFlags.None, new AsyncCallback(Reception), soc);
             //sServeur.Send(Encoding.Unicode.GetBytes("Client Connecté"));
-            bDemarrer.Enabled = true;
+
+            if (lbEchange.InvokeRequired)
+            {
+                Console.WriteLine("Serv - Same thread");
+            }
+            else
+            {
+                //bDemarrer.Enabled = true;
+                Console.WriteLine("Serv - Nothing");
+                //sClient.Send(Encoding.Unicode.GetBytes("Bienvenue client !"));
+            }
+            
         }
 
         private void bConnecter_Click(object sender, EventArgs e)
@@ -163,6 +213,12 @@ namespace Djamin_Petits_Cheveaux
         private void bDemarrer_Click(object sender, EventArgs e)
         {
             sClient.Send(Encoding.Unicode.GetBytes("Jeu lancé"));
+
+            //Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
+            //bBuffer = new Byte[1024];
+
+            Console.WriteLine("Serv - Jeu lancé");
+
             EcranPlateau plateau = new EcranPlateau();
             nbJoueur = 1;
             this.Hide();
@@ -177,7 +233,12 @@ namespace Djamin_Petits_Cheveaux
                 if (Tmp.EndReceive(iAR) > 0)
                 {                   
                     InsererItermThread(Encoding.Unicode.GetString(bBuffer));
+
+                    Array.Clear(bBuffer, 0, bBuffer.Length); // Vider le Buffer
+                    //bBuffer = new Byte[1024];
+
                     InintialiserReception(Tmp);
+                    Console.WriteLine("Cli - CLIENT");
                 }
                 else
                 {
@@ -185,6 +246,7 @@ namespace Djamin_Petits_Cheveaux
                     Tmp.Close();
                     if (sServeur != null)
                     {
+                        Console.WriteLine("Serv - SERVEUR");
                         sServeur.BeginAccept(new AsyncCallback(SurDemandeConnexion), sServeur);
                         //bDemarrer.Enabled = true;
                     }
